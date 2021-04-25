@@ -1,0 +1,42 @@
+.heading-big{
+    font-size: 1.75rem;
+}
+.container{
+   
+    margin: 0 auto;
+}
+.comment{
+    color:darkslategrey;
+}
+.button-add{
+   background-color: rgb(80, 35, 241);
+   color: white;
+   font-size: 1.25rem;
+   font-family: 'Poppins', sans-serif;
+   font-family: 'Zen Dots', cursive;
+}
+.button-delete{
+    background-color: rgb(245, 12, 12);
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Zen Dots', cursive;
+    
+}
+.button-radius{
+    border-radius: 2rem;
+}
+.container .row .box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 150px;
+    height: 200px;
+    border:  1px solid crimson;
+    margin: 15px;
+}
+
+
