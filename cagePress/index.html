@@ -50,7 +50,8 @@
                 Sıkıştırma işleminin bitmesini bekleyin. <br> Kalite ayarları için sıradaki küçük resimlere tıklayın.
                 <br>
                 Sıkıştırma seviyesini kontrol etmek için kaydırıcıyı, resimleri karşılaştırmak için fare hareketleri
-                kullanın. </h5>
+                kullanın.
+            </h5>
         </div>
     </div>
 
@@ -58,8 +59,15 @@
     <div class="buttons">
         <div class="d-flex btn-block justify-content-center align-items-center " role="group"
             aria-label="Basic example">
-            <button id="add" type="button" class="btn button-add button-radius">Yükleme</button>
-            <button id="delete" type="button" class="btn button-delete button-radius">Temizle</button>
+            <input type="file" id="upload" accept=".jpg, .jpeg, .png" />
+            <button onclick="process()">Process</button>
+            <div>
+                <img id="input" />
+            </div>
+            <div>
+                <img id="output" />
+            </div>
+            <script src="app.js"></script>
 
         </div>
     </div>
