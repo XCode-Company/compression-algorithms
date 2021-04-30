@@ -14,7 +14,9 @@ function process() {
 
     imgElement.onload = function (e) {
       const canvas = document.createElement("canvas");
-      const MAX_WIDTH = 400;
+      const MAX_WIDTH = 320;
+      const MAX_HEIGHT = 180;
+      const QUALITY = 0.7;
 
       const scaleSize = MAX_WIDTH / e.target.width;
       canvas.width = MAX_WIDTH;
