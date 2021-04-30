@@ -30,6 +30,17 @@ function process() {
 
 
       document.querySelector("#output").src = srcEncoded;
+      
+      document.getElementById("downb").disabled = false;
+      
     };
   };
 }
+function down() {
+  
+     
+    
+  
+}
+
+

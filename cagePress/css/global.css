@@ -33,10 +33,10 @@
 .box{
     text-align: center;
     background-color: #f2f2f2;
-    width: 150px;
-    height: 200px;
-    border:  1px solid crimson;
-    margin: 15px;
+    width: 400px;
+    height: 350px;
+    border:  0.1px solid crimson;
+    margin: 1px;
 }
 
 
