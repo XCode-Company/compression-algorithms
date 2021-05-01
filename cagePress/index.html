@@ -16,8 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zen+Dots&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" 
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <!--Font Awesome Ikon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -46,7 +45,9 @@
         <img src="/images/kafes.png" alt="logoo">
         <div class="logo text-center">
             <h5 class="comment"> Bu online resim boyutu küçültme sitesi istenen kalite seviyesini korurken
-                <span style="color:red">JPEG</span>,<span style="color:royalblue">PNG</span>,<span style="color:yellowgreen">GIF</span>,<span style="color:violet">SVG</span> ve <span style="color:turquoise">AVI</span> resim
+                <span style="color:red">JPEG</span>,<span style="color:royalblue">PNG</span>,<span
+                    style="color:yellowgreen">GIF</span>,<span style="color:violet">SVG</span> ve <span
+                    style="color:turquoise">AVI</span> resim
                 dosyalarını mümkün olan en küçük boyuta küçültmek için en iyi optimizasyon ve kayıplı sıkıştırma
                 algoritmalarının akıllı bir kombinasyonunu kullanır. <br>
                 Programsız olarak online resim boyutunu küçültmek istediğiniz en fazla 20 adet resmi yükleyin. <br>
@@ -62,36 +63,36 @@
     <div class="buttons">
         <div class="d-flex btn-block justify-content-center align-items-center " role="group"
             aria-label="Basic example">
-            <div >
-            <input class="" type="file" id="upload" accept=".jpg, .jpeg, .png" />
+            <div>
+                <input class="" type="file" id="upload" accept=".jpg, .jpeg, .png" />
 
-            <button class="button-run" onclick="process()">Çalıştır</button>
-            <br>
-            <br>
-            <br>
-        </div>
-        </div>
-           
+                <button class="button-run" onclick="process()">Çalıştır</button>
+                <br>
+                <br>
+                <br>
             </div>
-            <script src="app.js"></script>
-
         </div>
-         <!-- Kutular -->
+
+    </div>
+    <script src="app.js"></script>
+
+    </div>
+    <!-- Kutular -->
     <div class="container ">
-        <div class="row justify-content-center align-items-center" >
-            <div class="box" style="overflow: auto;">
+        <div class="row justify-content-center align-items-center">
+            <div id="boxDown" class="box" style="overflow: auto;">
                 <label>BEFORE</label>
-                <img  width="300" height="300" id="input" />
-            </div>
-            <div class="box" style="overflow:auto;" >
+                <img width="300" height="300" id="input" />
+                </div>
+             <div class="box" style="overflow:auto;">
                 <label> AFTER </label>
-                <img width="300" height="300" id="output" />
               
+                <img width="300" height="300" id="output" />
+
             </div>
             <script src="app.js"></script>
-            
+
         </div>
-       
 
     </div>   
 
@@ -102,6 +103,10 @@
     <br>
     <br>
 
+
+    </div>
+  
+   
 </body>
 
 </html>

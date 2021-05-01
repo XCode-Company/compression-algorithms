@@ -34,13 +34,14 @@ function process() {
 
       img=srcEncoded;
       
-       
-    };
-  };
+          
   
-}
+    };
 
-async function downloadImage() {
+  }
+}
+async function downloadImage()
+ {
   const image = await fetch(img)
   const imageBlog = await image.blob()
   const imageURL = URL.createObjectURL(imageBlog)
@@ -52,5 +53,7 @@ async function downloadImage() {
   link.click()
   document.body.removeChild(link)
 }
+
+
 
 
