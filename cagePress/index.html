@@ -59,8 +59,14 @@
     <div class="buttons">
         <div class="d-flex btn-block justify-content-center align-items-center " role="group"
             aria-label="Basic example">
-            <input type="file" id="upload" accept=".jpg, .jpeg, .png" />
-            <button onclick="process()">Çalıştır</button>
+            <div >
+            <input class="" type="file" id="upload" accept=".jpg, .jpeg, .png" />
+
+            <button class="button-run" onclick="process()">Çalıştır</button>
+            <br>
+            <br>
+            <br>
+        </div>
         </div>
            
             </div>
@@ -71,19 +77,23 @@
     <div class="container">
         <div class="row">
             <div class="box">
-                <img width="400" height="350" id="input" />
+                <img width="450" height="400" id="input" />
             </div>
             <div class="box">
-                <img width="400" height="350" id="output" />
-                <button onclick="downloadURI()">indir</button>
-               
+                <img width="450" height="400" id="output" />
+                
             </div>
             
             <script src="app.js"></script>
             
         </div>
         
-    </div>    
+
+    </div>
+    <br>
+            <br>
+            <br>
+    <div class="bu-box"><button class="button-run" onclick="downloadURI()">İndir</button>  </div> 
 
 </body>
 
