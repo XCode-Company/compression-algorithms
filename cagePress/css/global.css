@@ -8,21 +8,7 @@
 .comment{
     color:darkslategrey;
 }
-.button-add{
-   background-color: rgb(80, 35, 241);
-   color: white;
-   font-size: 1.25rem;
-   font-family: 'Poppins', sans-serif;
-   font-family: 'Zen Dots', cursive;
-}
-.button-delete{
-    background-color: rgb(245, 12, 12);
-    color: white;
-    font-size: 1.25rem;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Zen Dots', cursive;
-    
-}
+
 .button-radius{
     border-radius: 2rem;
 }
@@ -33,8 +19,8 @@
 .box{
     text-align: center;
     background-color: #f2f2f2;
-    width: 400px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border:  0.1px solid crimson;
     margin: 1px;
 }

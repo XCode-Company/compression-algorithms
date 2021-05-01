@@ -68,22 +68,27 @@
 
         </div>
          <!-- Kutular -->
-    <div class="container">
-        <div class="row">
-            <div class="box">
-                <img width="400" height="350" id="input" />
+    <div class="container ">
+        <div class="row justify-content-center align-items-center" >
+            <div class="box" style="overflow: auto;">
+                <img  width="300" height="300" id="input" />
             </div>
-            <div class="box">
-                <img width="400" height="350" id="output" />
-                <button onclick="downloadURI()">indir</button>
-               
+            <div class="box" style="overflow: auto;" >
+                <img width="300" height="300" id="output" />
+              
             </div>
-            
             <script src="app.js"></script>
             
         </div>
-        
-    </div>    
+       
+
+    </div>   
+    <div class="container-2 text-center">
+      <button id="download"    style="margin-top: 1rem;" type="button"  onclick="downloadURI()" class="btn btn-primary btn-block buttons">İndir</button>
+      
+    </div> 
+    <br>
+    <br>
 
 </body>
 

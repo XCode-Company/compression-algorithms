@@ -29,7 +29,8 @@ function process() {
       const srcEncoded = ctx.canvas.toDataURL(e.target, "image/jpeg");
 
 
-     // document.querySelector("#output").src = srcEncoded;
+      document.querySelector("#output").src = srcEncoded;
+    
       
       
        

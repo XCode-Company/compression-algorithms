@@ -33,12 +33,11 @@ border-bottom: 1px solid grey ;
     border-radius: 8px;
     letter-spacing: 0.5px;
 }
-.buttons #add{
-    margin-right: 3rem;
-    background-color: blueviolet;
-}
-.buttons #delete{
-    margin-left: 3rem;
-    background-color: rgb(87, 21, 21);
+#download{
+    width: 100px;
+    height: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    justify-content: center;
+    align-items: center;
 }
 
