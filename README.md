@@ -54,7 +54,7 @@ const ctx = canvas.getContext("2d");
       document.querySelector("#output").src = srcEncoded;
 ```
 
-<b>Ana Gövde 2</b>
+<b>Genel Görünüş</b>
 
-<img src="https://github.com/eminsaygi/OtobusBiletiRezervasyon/blob/main/img/ekran2.jpg"></a>
+<img src="https://github.com/XCode-Company/compression-algorithms/blob/main/img/anasayfa.png"></a>
 
