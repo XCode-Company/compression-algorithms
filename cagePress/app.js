@@ -1,3 +1,4 @@
+var img;
 function process() {
   const file = document.querySelector("#upload").files[0];
 
@@ -31,24 +32,25 @@ function process() {
 
       document.querySelector("#output").src = srcEncoded;
 
+      img=srcEncoded;
       
        
     };
   };
   
 }
-function downloadURI(uri, name) {
-  if (HTMLElement.prototype.click) {
-      var link = document.createElement("canvas");
-      link.download = name;
-      link.href = uri;
-      link.style.display = "none";
-      document.body.appendChild(link);
-      link.click();
-      setTimeout(function() { link.remove(); }, 500);
-  } else {
-      window.location.href = uri;
-  }
+
+async function downloadImage() {
+  const image = await fetch(img)
+  const imageBlog = await image.blob()
+  const imageURL = URL.createObjectURL(imageBlog)
+
+  const link = document.createElement('a')
+  link.href = imageURL
+  link.download = 'image file name here'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
 }
 
 
