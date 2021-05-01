@@ -31,23 +31,26 @@ function process() {
 
       document.querySelector("#output").src = srcEncoded;
 
-      
-       
+      console.log(srcEncoded);
+
+      <a href="www.google.com">Download!</a>
     };
   };
-  
 }
+
+
+
 function downloadURI(uri, name) {
   if (HTMLElement.prototype.click) {
-      var link = document.createElement("canvas");
-      link.download = name;
-      link.href = uri;
-      link.style.display = "none";
-      document.body.appendChild(link);
-      link.click();
-      setTimeout(function() { link.remove(); }, 500);
+    var link = document.createElement("canvas");
+    link.download = name;
+    link.href = uri;
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    setTimeout(function () { link.remove(); }, 500);
   } else {
-      window.location.href = uri;
+    window.location.href = uri;
   }
 }
 

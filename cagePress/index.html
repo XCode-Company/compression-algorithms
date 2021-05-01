@@ -43,7 +43,9 @@
         <img src="/images/kafes.png" alt="logoo">
         <div class="logo text-center">
             <h5 class="comment"> Bu online resim boyutu küçültme sitesi istenen kalite seviyesini korurken
-                <span style="color:red">JPEG</span>,<span style="color:royalblue">PNG</span>,<span style="color:yellowgreen">GIF</span>,<span style="color:violet">SVG</span> ve <span style="color:turquoise">AVI</span> resim
+                <span style="color:red">JPEG</span>,<span style="color:royalblue">PNG</span>,<span
+                    style="color:yellowgreen">GIF</span>,<span style="color:violet">SVG</span> ve <span
+                    style="color:turquoise">AVI</span> resim
                 dosyalarını mümkün olan en küçük boyuta küçültmek için en iyi optimizasyon ve kayıplı sıkıştırma
                 algoritmalarının akıllı bir kombinasyonunu kullanır. <br>
                 Programsız olarak online resim boyutunu küçültmek istediğiniz en fazla 20 adet resmi yükleyin. <br>
@@ -59,42 +61,57 @@
     <div class="buttons">
         <div class="d-flex btn-block justify-content-center align-items-center " role="group"
             aria-label="Basic example">
-            <div >
-            <input class="" type="file" id="upload" accept=".jpg, .jpeg, .png" />
+            <div>
+                <input class="" type="file" id="upload" accept=".jpg, .jpeg, .png" />
 
-            <button class="button-run" onclick="process()">Çalıştır</button>
-            <br>
-            <br>
-            <br>
-        </div>
-        </div>
-           
+                <button class="button-run" onclick="process()">Çalıştır</button>
+                <br>
+                <br>
+                <br>
             </div>
-            <script src="app.js"></script>
-
         </div>
-         <!-- Kutular -->
+
+    </div>
+    <script src="app.js"></script>
+
+    </div>
+    <!-- Kutular -->
     <div class="container ">
-        <div class="row justify-content-center align-items-center" >
+        <div class="row justify-content-center align-items-center">
             <div class="box" style="overflow: auto;">
-                <img  width="300" height="300" id="input" />
+                <img width="300" height="300" id="input" />
             </div>
-            <div class="box" style="overflow: auto;" >
+            <div id="boxDown" class="box" style="overflow: auto;">
                 <img width="300" height="300" id="output" />
-              
+
             </div>
             <script src="app.js"></script>
-            
-        </div>
-       
 
-    </div>   
+        </div>
+
+
+    </div>
     <div class="container-2 text-center">
-      <button id="download"    style="margin-top: 1rem;" type="button"  onclick="downloadURI()" class="btn btn-primary btn-block buttons">İndir</button>
-      
-    </div> 
+        <button id="download" style="margin-top: 1rem;" type="button" onclick="downloadURI()"
+            class="btn btn-primary btn-block buttons">İndir</button>
+
+    </div>
+    <div id="goster">20</div>
+
     <br>
     <br>
+
+    <script>
+        var download = document.querySelector("#boxDown");
+        // var goster = document.querySelector("#goster");
+
+        download.onclick = function () {
+            /* var sayi = Number(goster.innerHTML);
+            goster.innerHTML = ++sayi;*/
+
+        }
+
+    </script>
 
 </body>
 
