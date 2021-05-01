@@ -8,9 +8,7 @@
 .comment{
     color:darkslategrey;
 }
-<<<<<<< HEAD
 
-=======
 .button-add{
   
    color: white;
@@ -27,7 +25,6 @@
     margin: auto;
     
 }
->>>>>>> d13608b964c8c5627f7f1342c355a35659259ad8
 .button-radius{
     border-radius: 2rem;
 }
@@ -37,13 +34,13 @@
 }
 .box{
     text-align: center;
-<<<<<<< HEAD
+
     background-color: #f2f2f2;
     width: 300px;
     height: 300px;
     border:  0.1px solid crimson;
     margin: 1px;
-=======
+
     background-color:white;
     width: 450px;
     height: 400px;
@@ -55,7 +52,6 @@
     
     
     
->>>>>>> d13608b964c8c5627f7f1342c355a35659259ad8
 }
 .bu-box{
     position: absolute;

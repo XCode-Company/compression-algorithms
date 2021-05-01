@@ -30,11 +30,7 @@ function process() {
 
 
       document.querySelector("#output").src = srcEncoded;
-<<<<<<< HEAD
-    
-=======
->>>>>>> d13608b964c8c5627f7f1342c355a35659259ad8
-      
+
       
        
     };
