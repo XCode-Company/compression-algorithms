@@ -1,6 +1,7 @@
 html{
-    background-color:burlywood
+    background-image: url(/images/resimcik.jpg);
 }
+
 #navbar{
     margin: 0 auto;
     padding: 1rem;
@@ -15,6 +16,7 @@ html{
     align-items: center;
 padding: 1rem;
 border-bottom: 1px solid grey ;
+background-image: url(/images/resimcik.jpg);
 }
 #logo-comment img
 {
@@ -26,6 +28,7 @@ border-bottom: 1px solid grey ;
 {
     color: brown;
 }
+
 .buttons button{
     margin-top: 1.25rem;
     background: #336ea2;
