@@ -29,18 +29,26 @@ function process() {
       const srcEncoded = ctx.canvas.toDataURL(e.target, "image/jpeg");
 
 
-      document.querySelector("#output").src = srcEncoded;
+     // document.querySelector("#output").src = srcEncoded;
       
-      document.getElementById("downb").disabled = false;
       
+       
     };
   };
+  
 }
-function down() {
-  
-     
-    
-  
+function downloadURI(uri, name) {
+  if (HTMLElement.prototype.click) {
+      var link = document.createElement("canvas");
+      link.download = name;
+      link.href = uri;
+      link.style.display = "none";
+      document.body.appendChild(link);
+      link.click();
+      setTimeout(function() { link.remove(); }, 500);
+  } else {
+      window.location.href = uri;
+  }
 }
 
 
