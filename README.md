@@ -10,9 +10,9 @@ MVC mimari deseni kullanılmıştır.<br>
 
 <b>Proje Ekibi</b>
 
-<b>M.Emin Saygı:</b> https://www.linkedin.com/in/eminsaygı/
-<b>Gürkan Şentürk:</b> https://www.linkedin.com/in/can-balaman-8714b1181/
-<b>Can Balaman:</b> https://www.linkedin.com/in/gurkansenturk/
+<b>M.Emin Saygı:</b> https://www.linkedin.com/in/eminsaygı/ <br>
+<b>Gürkan Şentürk:</b> https://www.linkedin.com/in/can-balaman-8714b1181/ <br>
+<b>Can Balaman:</b> https://www.linkedin.com/in/gurkansenturk/ <br>
   
 <b>Proje kodları içinden Görüntüler</b>
 
