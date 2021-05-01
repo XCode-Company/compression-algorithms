@@ -10,23 +10,6 @@ MVC mimari deseni kullanılmıştır.<br>
   
 <b>Proje kodları içinden Görüntüler</b>
 
-<b>Dosya İndirme</b>
-
-```jsx
-async function downloadImage()
- {
-  const image = await fetch(img)
-  const imageBlog = await image.blob()
-  const imageURL = URL.createObjectURL(imageBlog)
-
-  const link = document.createElement('a')
-  link.href = imageURL
-  link.download = 'image file name here'
-  document.body.appendChild(link)
-  link.click()
-  document.body.removeChild(link)
-}
-```
 
 <b>Sıkıştırma Algoritması </b>
 
@@ -53,6 +36,24 @@ const ctx = canvas.getContext("2d");
 
       document.querySelector("#output").src = srcEncoded;
 ```
+<b>Dosya İndirme</b>
+
+```jsx
+async function downloadImage()
+ {
+  const image = await fetch(img)
+  const imageBlog = await image.blob()
+  const imageURL = URL.createObjectURL(imageBlog)
+
+  const link = document.createElement('a')
+  link.href = imageURL
+  link.download = 'image file name here'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
+```
+
 
 <b>Genel Görünüş</b>
 
