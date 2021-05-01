@@ -1,12 +1,18 @@
 # Cage Press
-Javascript ile compression-algorithms uygulaması<br>
+Javascript ile <b>Compression Algorithms</b> uygulaması<br>
 
 <b> Kullanılan Teknolojiler: </b>
 
 Javascript  ile geliştirilmiştir.<br>
 MVC mimari deseni kullanılmıştır.<br>
 
-<b>Proje hakkında yapılan sunumlar : https://youtu.be/d-_QBKvZX00
+<b>Proje hakkında yapılan sunumlar : https://www.youtube.com/channel/UCqtFvqx1E8xUir16CNdkosQ
+
+<b>Proje Ekibi</b>
+
+<b>M.Emin Saygı:</b> https://www.linkedin.com/in/eminsaygı/
+<b>Gürkan Şentürk:</b> https://www.linkedin.com/in/can-balaman-8714b1181/
+<b>Can Balaman:</b> https://www.linkedin.com/in/gurkansenturk/
   
 <b>Proje kodları içinden Görüntüler</b>
 
