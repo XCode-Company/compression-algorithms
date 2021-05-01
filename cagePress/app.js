@@ -31,9 +31,9 @@ function process() {
 
       document.querySelector("#output").src = srcEncoded;
 
-      console.log(srcEncoded);
 
-      <a href="www.google.com">Download!</a>
+
+
     };
   };
 }
