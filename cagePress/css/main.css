@@ -40,4 +40,9 @@ border-bottom: 1px solid grey ;
     justify-content: center;
     align-items: center;
 }
+.container label{
+    font-family: 'Krona One', sans-serif;
+    
+}
+
 
