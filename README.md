@@ -6,8 +6,8 @@ Javascript ile <b>Compression Algorithms</b> uygulaması<br>
 Javascript  ile geliştirilmiştir.<br>
 MVC mimari deseni kullanılmıştır.<br>
 
-<b>Proje hakkında yapılan sunumlar : https://www.youtube.com/channel/UCqtFvqx1E8xUir16CNdkosQ
-
+<b>Proje hakkında yapılan sunumlar:<b/> https://www.youtube.com/channel/UCqtFvqx1E8xUir16CNdkosQ <br>
+<b>Projenin çalışır sürümü:</b> http://eminsaygi.com/cagepress/ <br>
 <b>Proje Ekibi</b>
 
 <b>M.Emin Saygı:</b> https://www.linkedin.com/in/eminsaygı/ <br>
