@@ -9,7 +9,7 @@ MVC mimari deseni kullanılmıştır.<br>
 <b>Proje hakkında yapılan sunumlar:<b/> https://www.youtube.com/channel/UCqtFvqx1E8xUir16CNdkosQ <br>
 <b>Projenin çalışır sürümü:</b> http://eminsaygi.com/cagepress/ <br>
   
-<b>Proje Ekibi</b>
+<b>Proje Ekibi</b> <br>
 <b>M.Emin Saygı:</b> https://www.linkedin.com/in/eminsaygı/ <br>
 <b>Gürkan Şentürk:</b> https://www.linkedin.com/in/can-balaman-8714b1181/ <br>
 <b>Can Balaman:</b> https://www.linkedin.com/in/gurkansenturk/ <br>
