@@ -86,8 +86,8 @@
                                                 <li class="active"> <a href="#game">Başlangıç</a> </li>
                                                 <li> <a href="#sıkıstır">Sıkıştırma</a> </li>
                                                 <li> <a href="#bilgi">Bilgilendirme</a> </li>
-                                                <li> <a href="#testimonial">YOUTUBE/GİTHUB </a> </li>
-                                                <li> <a href="#contact">Contact</a> </li>
+                                                <li> <a href="#media">YOUTUBE/GİTHUB </a> </li>
+                                                <li> <a href="#contact">Ekip</a> </li>
 
                                             </ul>
                                         </nav>
@@ -98,7 +98,7 @@
                                 <div class="text-bg">
                                     <h1>CAGEPRESS<br> Sıkıştırma</h1>
                                     <span>Bu online resim boyutu küçültme sitesi istenen kalite seviyesini korurken
-                                        JPEG,PNG,GIF,SVG ve AVI resim dosyalarını mümkün olan en küçük boyuta küçültmek
+                                        JPEG,PNG,GIF ve WebP resim dosyalarını mümkün olan en küçük boyuta küçültmek
                                         için en iyi optimizasyon ve kayıplı sıkıştırma algoritmalarının akıllı bir
                                         kombinasyonunu kullanır</span>
                                     <a href="#sıkıstır">Git</a>
@@ -123,12 +123,12 @@
     <!-- We are -->
     <div id="sıkıstır" class="We_are">
         <div class="container">
-            <h3>Image compressor</h3>
+            <h3>Resim Sıkıştırma</h3>
             <hr>
             <div id="app">
                 <div class="card bg-light mb-4" @change="change" @dragover="dragover" @drop="drop">
                     <div class="card-body">
-                        <div class="p-5 text-center">Drop image here or <input type="file" id="file"
+                        <div class="p-5 text-center">Dosyayı sürükle veya <input type="file" id="file"
                                 accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff"
                                 ref="input"></div>
                     </div>
@@ -218,7 +218,7 @@
                     <div class="col-lg-8 mb-4">
                         <div class="card mb-4">
                             <div class="card-body">
-                                <h3 class="card-title">Input (original)</h3>
+                                <h3 class="card-title">Giriş (Orjinal)</h3>
                                 <hr>
                                 <div class="row">
                                     <div class="col-md-4 d-flex">
@@ -237,7 +237,7 @@
                                             <!--<dd class="col-sm-7">{{ input.name || 'N/A' }}</dd>-->
                                             <!--<dt class="col-sm-5">type:</dt>-->
                                             <!--<dd class="col-sm-7">{{ input.type || 'N/A' }}</dd>-->
-                                            <dt class="col-sm-5">size:</dt>
+                                            <dt class="col-sm-5">Boyut:</dt>
                                             <dd class="col-sm-7">{{ input.size | prettySize }}</dd>
                                         </dl>
                                     </div>
@@ -246,7 +246,7 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title">Output (compressed)</h3>
+                                <h3 class="card-title">Çıkış (Sıkıştırılmış)</h3>
                                 <hr>
                                 <div class="row">
                                     <div class="col-md-4 d-flex justify-content-center">
@@ -270,7 +270,7 @@
                                             <!--<dd class="col-sm-7">{{ output.name || 'N/A' }}</dd>-->
                                             <!--<dt class="col-sm-5">type:</dt>-->
                                             <!--<dd class="col-sm-7">{{ output.type || 'N/A' }}</dd>-->
-                                            <dt class="col-sm-5">size:</dt>
+                                            <dt class="col-sm-5">Boyut:</dt>
                                             <dd class="col-sm-7">{{ output.size | prettySize }}
                                                 <span v-if="output.size">({{ ((1 - (output.size / input.size)) *
                                                     100).toFixed(2) }}% off)</span>
@@ -393,7 +393,7 @@
 
             <!-- about  -->
             <div id="about" class="about">
-                <div class="container">
+                <div id="media" class=" container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="titlepage">
@@ -422,7 +422,7 @@
             <!-- end abouts -->
 
             <!-- testimonial -->
-            <div id="testimonial" class="testimonial">
+            <div class="testimonial">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -451,7 +451,7 @@
                                 </div>
                             </div>
 
-                            <div class="clients_box">
+                            <div id="contact" class="clients_box">
                                 <br>
                                 <h1>Cage Press Ekibi</h1>
 
