@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Compress images and photos for displaying on web pages, sharing on social networks or sending by email.">
+
+    <!-- site metas -->
+    <title>jackpiro</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
+</head>
+<!-- body -->
+
+<body class="main-layout">
+
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header-top">
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+
+                            <ul class="top_icon">
+                                <li class="button_login"> <a href="#">Login</a> </li>
+                                <li> <a href="#about">Signup</a> </li>
+                                <li class="mean-last">
+                                    <a href="#"><img src="images/search_icon.png" alt="#" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+
+            <!-- end header -->
+            <section class="slider_section">
+                <div class="banner_main">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 padding_left0">
+                                <div class="menu-area">
+                                    <div class="limit-box">
+                                        <nav class="main-menu">
+                                            <ul class="menu-area-main">
+                                                <li class="active"> <a href="#game">Başlangıç</a> </li>
+                                                <li> <a href="#sıkıstır">Sıkıştırma</a> </li>
+                                                <li> <a href="#bilgi">Bilgilendirme</a> </li>
+                                                <li> <a href="#testimonial">YOUTUBE/GİTHUB </a> </li>
+                                                <li> <a href="#contact">Contact</a> </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                                <div class="text-bg">
+                                    <h1>CAGEPRESS<br> Sıkıştırma</h1>
+                                    <span>Bu online resim boyutu küçültme sitesi istenen kalite seviyesini korurken
+                                        JPEG,PNG,GIF,SVG ve AVI resim dosyalarını mümkün olan en küçük boyuta küçültmek
+                                        için en iyi optimizasyon ve kayıplı sıkıştırma algoritmalarının akıllı bir
+                                        kombinasyonunu kullanır</span>
+                                    <a href="#sıkıstır">Git</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="text-img">
+                                    <figure><img src="images/img.png" alt="#" /></figure>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </header>
+
+
+    <!-- We are -->
+    <div id="sıkıstır" class="We_are">
+        <div class="container">
+            <h3>Image compressor</h3>
+            <hr>
+            <div id="app">
+                <div class="card bg-light mb-4" @change="change" @dragover="dragover" @drop="drop">
+                    <div class="card-body">
+                        <div class="p-5 text-center">Drop image here or <input type="file" id="file"
+                                accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff"
+                                ref="input"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--<div class="col-lg-4 mb-4">-->
+                    <!--<div class="card">-->
+                    <!--<div class="card-body">-->
+                    <!--<h3 class="card-title">Options</h3>-->
+                    <!--<hr>-->
+                    <!--<fieldset class="form-group">-->
+                    <!--<div class="form-check form-check-inline">-->
+                    <!--<input type="checkbox" name="checkOrientation" class="form-check-input" id="inputCheckOrientation" v-model="options.checkOrientation">-->
+                    <!--<label class="form-check-label" for="inputCheckOrientation">checkOrientation</label>-->
+                    <!--</div>-->
+                    <!--</fieldset>-->
+                    <!--<div class="form-group row">-->
+                    <!--<label for="inputMaxWidth" class="col-sm-5 col-form-label">maxWidth</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<input type="number" name="maxWidth" class="form-control" id="inputMaxWidth" placeholder="Infinity" v-model.number="options.maxWidth">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group row">-->
+                    <!--<label for="inputMaxHeight" class="col-sm-5 col-form-label">maxHeight</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<input type="number" name="maxHeight" class="form-control" id="inputMaxHeight" placeholder="Infinity" v-model.number="options.maxHeight">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group row">-->
+                    <!--<label for="inputMinWidth" class="col-sm-5 col-form-label">minWidth</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<input type="number" name="minWidth" class="form-control" id="inputMinWidth" placeholder="0" v-model.number="options.minWidth">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group row">-->
+                    <!--<label for="inputMinHeight" class="col-sm-5 col-form-label">minHeight</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<input type="number" name="minHeight" class="form-control" id="inputMinHeight" placeholder="0" v-model.number="options.minHeight">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group row">-->
+                    <!--<label for="inputWidth" class="col-sm-5 col-form-label">width</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<input type="number" name="width" class="form-control" id="inputWidth" placeholder="undefined" v-model.number="options.width">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group row">-->
+                    <!--<label for="inputHeight" class="col-sm-5 col-form-label">height</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<input type="number" name="height" class="form-control" id="inputHeight" placeholder="undefined" v-model.number="options.height">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group row">-->
+                    <!--<label for="inputQuality" class="col-sm-5 col-form-label">quality</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<select class="form-control" name="quality" id="inputQuality" v-model.number="options.quality">-->
+                    <!--<option value="0">0</option>-->
+                    <!--<option value="0.1">0.1</option>-->
+                    <!--<option value="0.2">0.2</option>-->
+                    <!--<option value="0.3">0.3</option>-->
+                    <!--<option value="0.4">0.4</option>-->
+                    <!--<option value="0.5">0.5</option>-->
+                    <!--<option value="0.6">0.6</option>-->
+                    <!--<option value="0.7">0.7</option>-->
+                    <!--<option value="0.8">0.8</option>-->
+                    <!--<option value="0.9">0.9</option>-->
+                    <!--<option value="1">1</option>-->
+                    <!--<option value="">NaN</option>-->
+                    <!--</select>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group row">-->
+                    <!--<label for="inputMimeType" class="col-sm-5 col-form-label">mimeType</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<input type="text" name="mimeType" class="form-control" id="inputMimeType" placeholder="auto" v-model.number="options.mimeType">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group row mb-0">-->
+                    <!--<label for="inputConvertSize" class="col-sm-5 col-form-label">convertSize</label>-->
+                    <!--<div class="col-sm-7">-->
+                    <!--<input type="number" name="convertSize" class="form-control" id="inputConvertSize" placeholder="5000000" v-model.number="options.convertSize">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="col-lg-8 mb-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="card-title">Input (original)</h3>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-4 d-flex">
+                                        <div class="w-100 text-center" v-if="inputURL">
+                                            <img class="mw-100" :src="inputURL" :alt="input.name">
+                                        </div>
+                                        <div v-else class="w-100 bg-light"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <dl class="row">
+                                            <!--<dt class="col-sm-5">lastModified:</dt>-->
+                                            <!--<dd class="col-sm-7">{{ input.lastModified || 'N/A' }}</dd>-->
+                                            <!--<dt class="col-sm-5">lastModifiedDate:</dt>-->
+                                            <!--<dd class="col-sm-7">{{ input.lastModifiedDate || 'N/A' }}</dd>-->
+                                            <!--<dt class="col-sm-5">name:</dt>-->
+                                            <!--<dd class="col-sm-7">{{ input.name || 'N/A' }}</dd>-->
+                                            <!--<dt class="col-sm-5">type:</dt>-->
+                                            <!--<dd class="col-sm-7">{{ input.type || 'N/A' }}</dd>-->
+                                            <dt class="col-sm-5">size:</dt>
+                                            <dd class="col-sm-7">{{ input.size | prettySize }}</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Output (compressed)</h3>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-4 d-flex justify-content-center">
+                                        <div class="w-100 text-center" v-if="outputURL">
+                                            <img class="mw-100" :src="outputURL" :alt="output.name">
+                                            <div class="mt-2">
+                                                <a class="btn btn-sm btn-blocks btn-outline-primary mt-2"
+                                                    :download="output.name" :href="outputURL"
+                                                    title="Download the compressed image">Tıkla İndir</a>
+                                            </div>
+                                        </div>
+                                        <div v-else class="w-100 bg-light"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <dl class="row">
+                                            <!--<dt class="col-sm-5">lastModified:</dt>-->
+                                            <!--<dd class="col-sm-7">{{ output.lastModified || 'N/A' }}</dd>-->
+                                            <!--<dt class="col-sm-5">lastModifiedDate:</dt>-->
+                                            <!--<dd class="col-sm-7">{{ output.lastModifiedDate || 'N/A' }}</dd>-->
+                                            <!--<dt class="col-sm-5">name:</dt>-->
+                                            <!--<dd class="col-sm-7">{{ output.name || 'N/A' }}</dd>-->
+                                            <!--<dt class="col-sm-5">type:</dt>-->
+                                            <!--<dd class="col-sm-7">{{ output.type || 'N/A' }}</dd>-->
+                                            <dt class="col-sm-5">size:</dt>
+                                            <dd class="col-sm-7">{{ output.size | prettySize }}
+                                                <span v-if="output.size">({{ ((1 - (output.size / input.size)) *
+                                                    100).toFixed(2) }}% off)</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end We are -->
+    <!-- our -->
+    <div id="bilgi" class="our">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Bilgilendirme</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 margin_bottom">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="two-box">
+                                <figure><img src="images/JPEG.png" alt="#" /></figure>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+
+                            <div class="Games">
+                                <h3>JPEG</h3>
+                                <p>JPEG, Joint Photographic Experts Group (Birleşik Fotoğraf Uzmanları Grubu) tarafından
+                                    standartlaştırılmış bir sayısal görüntü kodlama biçimidir. Bu biçim, 1994 yılında
+                                    ISO 10918-1 adıyla standartlaşmıştır. </p>
+                                <a href="https://tr.wikipedia.org/wiki/JPEG " target="_blank">wikipedia</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 margin_bottom">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="two-box">
+                                <figure><img src="images/PNG.png" alt="#" /></figure>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+
+                            <div class="Games">
+                                <h3>PNG</h3>
+                                <p>PNG, "Taşınabilir Ağ Grafiği" anlamındaki (Portable Network Graphics) 'in
+                                    kısaltmasıdır ve kayıpsız sıkıştırarak görüntü saklamak için kullanılan bir saklama
+                                    biçimidir.</p>
+                                <a href="https://tr.wikipedia.org/wiki/Portable_Network_Graphics"
+                                    target="_blank">wikipedia</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="two-box">
+                                <figure><img src="images/GIF.png" alt="#" /></figure>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+
+                            <div class="Games">
+                                <h3>GIF</h3>
+                                <p>GIF, İngilizce Grafik Değiştirme Biçimi anlamına gelen Graphics Interchange Formatin
+                                    kısaltmasıdır ve bir sayısal resim saklama biçimidir.</p>
+                                <a href="https://tr.wikipedia.org/wiki/Graphics_Interchange_Format"
+                                    target="_blank">wikipedia</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end our -->
+
+    <!-- about  -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Youtube</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-box">
+                        <div><iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/videoseries?list=PL3t1Ps0xo50fcSMoZZzfau_TIMFa41kRh"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></div>
+                        <div>https://github.com/XCode-Company/compression-algorithms.git</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end abouts -->
+
+    <!-- testimonial -->
+    <div id="testimonial" class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Testimonial</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 offset-md-2">
+                    <div class="row box">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><img src="images/test1.png" alt="#" /></figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><img src="images/test2.png" alt="#" /></figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><img src="images/test3.png" alt="#" /></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients_box">
+                        <h3>Jecoo</h3>
+                        <p>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            <br>aliqua. Ut enim ad minim veniam, quis
+                            <br>nostrud exercitation ullamco
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end testimonial -->
+
+    <!-- contact -->
+    <div id="contact" class="contact">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <form class="contact_bg">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <input class="contactus" placeholder="Name" type="text" name="Name">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input class="contactus" placeholder="Phone" type="text" name="Email">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input class="contactus" placeholder="Email" type="text" name="Email">
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <button class="send">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end contact -->
+
+    <!--  footer -->
+    <footr>
+        <div class="footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Newsletter</h2>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <form class="news">
+                            <input class="newslatter" placeholder="Enter Your Email" type="text"
+                                name="Enter Your Email">
+                            <button class="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <ul class="social_link">
+                                        <li><a href="#"><img src="icon/fb.png"></a></li>
+                                        <li><a href="#"><img src="icon/tw.png"></a></li>
+                                        <li><a href="#"><img src="icon/lin(2).png"></a></li>
+                                        <li><a href="#"><img src="icon/instagram.png"></a></li>
+                                    </ul>
+                                    <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="address">
+                                    <h3>Quick links</h3>
+                                    <ul class="Menu_footer">
+                                        <li class="active"> <img src="images/3.png" alt="#"> <a href="#game">Game</a>
+                                        </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#software">Software</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#about">About</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#testimonial"> Testimonial</a>
+                                        </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#contact">Contact</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="address">
+                                    <h3>downloded</h3>
+                                    <ul class="Links_footer">
+                                        <li class="active"><img src="images/3.png" alt="#"> <a href="#">Lorem Ipsum </a>
+                                        </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#">Simply random</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#">Roots in a</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#"> Piece</a> </li>
+                                        <li><img src="images/3.png" alt="#"> <a href="#">Classical</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <h3>Contact us </h3>
+                                    <ul class="loca">
+                                        <li>
+                                            <a href="#"><img src="icon/loc.png" alt="#" /></a>London 145
+                                            <br>United Kingdom
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2019 All Rights Reserved. <a href="https://html.design/">Free html Templates</a></p>
+                </div>
+            </div>
+        </div>
+    </footr>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/image-compressor.js"></script>
+</body>
+
+</html>
