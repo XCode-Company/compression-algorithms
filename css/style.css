@@ -347,6 +347,8 @@
 }
  .logo {
      float: left;
+     margin-left: 42rem;
+     margin-right: 60rem;
 }
  nav.main-menu {
      float: left;
