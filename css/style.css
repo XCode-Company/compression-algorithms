@@ -471,6 +471,34 @@
      transition: opacity 0.2s ease 0s, visibility 0.2s linear 0s;
      text-align: left;
 }
+
+#dis_bolme{
+
+width: 1250px; 
+
+height:120px;
+
+background-color: white
+
+}
+
+.ic_bolme{
+
+    float:left;
+
+    width:600px;
+
+    height:550px;
+
+
+    background-color: white;
+
+    margin-right: 10px;
+
+    margin-left: 4px;
+}
+
+
  .dropdown-bar:hover .dropdown-link {
      opacity: 1;
      visibility: visible;
