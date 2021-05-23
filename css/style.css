@@ -1337,6 +1337,19 @@ color: #f00;
  .testimonial_box {
     text-align: center;
 }
+.testimonial_boxa1 {
+    text-align: center;
+    left: 200px;
+}
+.testimonial_boxa2 {
+    text-align: center;
+    left: 500;
+    
+}
+.testimonial_boxa3 {
+    text-align: center;
+    left: 800px;
+}
  .testimonial_box figure {
     margin: 0;
 }
