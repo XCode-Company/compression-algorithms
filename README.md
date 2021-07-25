@@ -97,8 +97,6 @@ if (app1Start) {
 	  }
 ```
 <br> <br>
-<h1><b>Genel Görünüş</b></h1>
 
-<h1> <a href="https://www.cagepress.tech/">Index.html</a></h1>
 
 
