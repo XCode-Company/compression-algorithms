@@ -3,7 +3,7 @@ Javascript ile <b>Compression Algorithms</b> uygulaması<br>
 
 ---
 
-[Click to see the Project](https://www.cagepress.tech)
+[Click to see the Project]https://xcode-company.github.io/compression-algorithms/)
 
 ---
 <b> Kullanılan Teknolojiler: </b>
@@ -12,7 +12,7 @@ Javascript  ile geliştirilmiştir.<br>
 MVC mimari deseni kullanılmıştır.<br>
 
 <b>Proje hakkında yapılan sunumlar:<b/> https://www.youtube.com/channel/UCqtFvqx1E8xUir16CNdkosQ <br>
-<b>Projenin çalışır sürümü:</b> http://eminsaygi.com/cagepress/ <br>
+<b>Projenin çalışır sürümü:</b> https://xcode-company.github.io/compression-algorithms/ <br>
   
 <b>Proje Ekibi</b> <br>
 <b>M.Emin Saygı:</b> https://www.linkedin.com/in/eminsaygı/ <br>
