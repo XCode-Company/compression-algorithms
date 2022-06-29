@@ -3,7 +3,7 @@ Javascript ile <b>Compression Algorithms</b> uygulaması<br>
 
 ---
 
-[Click to see the Project]https://xcode-company.github.io/compression-algorithms/)
+[Click to see the Project](https://xcode-company.github.io/compression-algorithms/)
 
 ---
 <b> Kullanılan Teknolojiler: </b>
